@@ -54,7 +54,7 @@ jobs:
           cache: true
           relative_project_path: ./
 
-      - name: Upload apk
+      - name: Upload APK
         id: upload
         uses: actions/upload-artifact@v4.5.0
         with:
