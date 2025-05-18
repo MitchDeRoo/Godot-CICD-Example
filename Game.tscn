@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbtv5f8tcwtku"]
+
+[ext_resource type="Script" uid="uid://bob21xkh0acx5" path="res://Game.cs" id="1_wbfu4"]
+[ext_resource type="Script" uid="uid://88jkadoti0rh" path="res://ClickerExample.cs" id="2_xkndl"]
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_wbfu4")
+
+[node name="Clicker Example" type="VBoxContainer" parent="."]
+offset_right = 77.0
+offset_bottom = 58.0
+alignment = 1
+script = ExtResource("2_xkndl")
+
+[node name="ClickButton" type="Button" parent="Clicker Example"]
+layout_mode = 2
+text = "Click Me!"
+
+[node name="ScoreLabel" type="Label" parent="Clicker Example"]
+layout_mode = 2
+text = "Score: 0"
